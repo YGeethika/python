@@ -1,0 +1,10 @@
+length=int(input("Enter Number of Names: "))
+names=[]
+for index in range(length):
+temp=input(f"Enter Names #(index+1) : ")
+names.append(temp)
+for index,name in enumerate(names):
+names[index]=name[0].upper()+name[1:]
+print("Names present in list are...")
+for name in names:
+print(name)
